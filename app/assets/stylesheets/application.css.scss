@@ -21,7 +21,7 @@ body, h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
 }
 
-body, .navbar {
+.navbar, .home-callout {
   //Gradient provided by @_ighosh at uiGradients.com
   background: #acb6e5;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
@@ -30,4 +30,11 @@ body, .navbar {
 
 .navbar {
   border: none;
+}
+
+.home-callout {
+  color: white;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
