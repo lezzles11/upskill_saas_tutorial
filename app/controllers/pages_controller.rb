@@ -4,5 +4,8 @@ class PagesController < ApplicationController
     
     def thebeginning
     end
+    
+    def theclimax
+    end
 end
 
