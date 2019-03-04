@@ -17,6 +17,17 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-h1, h2, h3 {
+body, h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
+}
+
+body, .navbar {
+  //Gradient provided by @_ighosh at uiGradients.com
+  background: #acb6e5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar {
+  border: none;
 }
