@@ -16,9 +16,17 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
-body, h1, h2, h3 {
+ul, ol, table, th, td, body, h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  margin-top: 30px;
+	color: white;
+	font-size: 50px;
 }
 
 .navbar, .home-callout {
@@ -32,6 +40,68 @@ body, h1, h2, h3 {
   border: none;
 }
 
+.home-callout {
+  color: white;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: left;
+}
+
+table.center{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+form{
+	text-align:center;
+	font-weight: bolder;
+}
+
+.cool{
+	font-family: 'Pacifico', cursive;
+	color: red;
+	font-size: 20px;
+}
+
+.hover:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+.lesley{
+  border-radius: 40%;
+  height: 140px;
+  width: 120px;
+}
+
+.reddit{
+	border-radius: 40%;
+	height: 40px;
+	width: 25px;
+}
+
+ul, ol, p, h2, h3, h4{
+  margin-left:50px;
+}
+
+// Nav Styles
+.navbar {
+  border: none;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
+}
+// Home Page Styles
 .home-callout {
   color: white;
   margin-top: -20px;
