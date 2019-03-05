@@ -19,14 +19,34 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-ul, ol, table, th, td, body, h1, h2, h3 {
+ul, ol, body, h1, h3 {
   font-family: 'Libre Baskerville', serif;
+  color: #913000
+}
+
+td {
+  font-family: 'Libre Baskerville', serif;
+  color: #DE6314
+  padding-left;
+}
+
+th {
+  font-family: 'Libre Baskerville', serif;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
 
 h1 {
   margin-top: 30px;
 	color: white;
 	font-size: 50px;
+}
+
+h2 {
+  font-family: 'Libre Baskerville', serif;
+  color: #A84308;
 }
 
 .navbar, .home-callout {
@@ -47,9 +67,10 @@ h1 {
   padding-bottom: 100px;
 }
 
-table, th, td {
-  border: 1px solid black;
-  text-align: left;
+th, td, table {
+  text-align: center;
+  border: 1px dashed #5E1D00;
+  border-spacing: 5px;
 }
 
 table.center{
@@ -85,6 +106,12 @@ form{
 	width: 25px;
 }
 
+.peasant{
+  border-radius:40%;
+  height: 150px;
+  width: 100px;
+}
+
 ul, ol, p, h2, h3, h4{
   margin-left:50px;
 }
@@ -107,4 +134,22 @@ ul, ol, p, h2, h3, h4{
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 100px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #86fde8;
+  }
+}
+  
+.stamp {
+  border: 5px dashed black;
+}
+
+.white-text {
+  color: white;
 }

@@ -7,6 +7,14 @@
     <link href="//fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+	  <!-- Font Awesome -->
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	  <!-- Bootstrap core CSS -->
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+	  <!-- Material Design Bootstrap -->
+	  <link href="css/mdb.min.css" rel="stylesheet">
+	  <!-- Your custom styles (optional) -->
+	  <link href="css/style.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -28,8 +36,8 @@
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "The Beginning", "/thebeginning" %></li>
-            <li><%= link_to "The Climax", "/theclimax" %></li>
+            <li><%= link_to "The Beginning", thebeginning_path %></li>
+            <li><%= link_to "The Climax", theclimax_path %></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
