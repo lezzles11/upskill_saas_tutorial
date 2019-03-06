@@ -26,8 +26,10 @@ ul, ol, body, h1, h3 {
 
 td {
   font-family: 'Libre Baskerville', serif;
-  color: #DE6314
-  padding-left;
+  color: #DE6314;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
 
 th {
@@ -160,3 +162,24 @@ ul, ol, p, h2, h3, h4{
 .white-text {
   color: white;
 }
+
+.blue-shadow {
+  color: beige;
+  text-shadow: 1.2px 1.2px cornflowerblue;
+}
+
+.teal-shadow {
+  color: beige;
+  text-shadow: 1.2px 1.2px teal;
+}
+
+.teal-text {
+  color: darkcyan;
+  text-shadow: 1px 1px white;
+}
+
+.grey-shadow {
+  color: beige;
+  text-shadow: 1px 1px grey;
+}
+
