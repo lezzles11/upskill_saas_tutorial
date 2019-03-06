@@ -108,8 +108,10 @@ form{
 
 .peasant{
   border-radius:40%;
-  height: 150px;
-  width: 100px;
+  height: 190px;
+  float: right;
+  margin-right: 440px;
+  margin-top: -100px;
 }
 
 ul, ol, p, h2, h3, h4{
@@ -152,4 +154,10 @@ ul, ol, p, h2, h3, h4{
 
 .white-text {
   color: white;
+}
+
+.footer {
+  color: white;
+  margin: 30px;
+  text-align: right;
 }
