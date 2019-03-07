@@ -21,12 +21,10 @@
 
 ul, ol, body, h1, h3 {
   font-family: 'Libre Baskerville', serif;
-  color: #913000
 }
 
 td {
   font-family: 'Libre Baskerville', serif;
-  color: #DE6314;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
@@ -34,7 +32,6 @@ td {
 
 th {
   font-family: 'Libre Baskerville', serif;
-  color: black;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
@@ -61,6 +58,37 @@ h2 {
   border: none;
 }
 
+.logo:hover {
+  animation-name: logo-hover;
+  animation-duration: 1s; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo-hover {
+  100% { 
+    color: black;
+  }
+}
+
+.peasant{
+  height: 190px;
+  float: right;
+  margin-right: 440px;
+  margin-top: -100px;
+  animation-name: fade1;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  50% {
+    opacity: 0.1;
+  }
+}
+
 .home-callout {
   color: white;
   margin-top: -20px;
@@ -77,6 +105,7 @@ th, td, table {
 table.center{
 	margin-left:auto;
 	margin-right:auto;
+	color: white;
 }
 
 form{
@@ -107,13 +136,6 @@ form{
 	width: 25px;
 }
 
-.peasant{
-  border-radius:40%;
-  height: 190px;
-  float: right;
-  margin-right: 440px;
-  margin-top: -100px;
-}
 
 ul, ol, p, h2, h3, h4{
   margin-left:50px;
@@ -163,6 +185,7 @@ ul, ol, p, h2, h3, h4{
   color: white;
 }
 
+//home page text-shadow stuff 
 .blue-shadow {
   color: beige;
   text-shadow: 1.2px 1.2px cornflowerblue;
@@ -174,12 +197,206 @@ ul, ol, p, h2, h3, h4{
 }
 
 .teal-text {
-  color: darkcyan;
-  text-shadow: 1px 1px white;
+  color: gray;
+  text-shadow: 1.2px 1.2px papayawhip;
 }
 
 .grey-shadow {
   color: beige;
   text-shadow: 1px 1px grey;
 }
+
+.black-shadow {
+  color: beige;
+  text-shadow: 1.2px 1.2px black;
+}
+
+.table-time-text {
+  text-shadow: 1px 1px ghostwhite;
+  color: rebeccapurple;
+}
+
+.table-blue-text {
+  text-shadow: 1px 1px ghostwhite;
+  color: darkmagenta;
+}
+
+.table-course-text {
+  color: royalblue;
+  text-shadow: 1.2px 1.2px white;
+}
+
+.table-date-text {
+  color: darkslateblue;
+  text-shadow: 1.2px 1.2px beige;
+}
+
+.table-header-text {
+  color: #212D8A;
+  text-shadow: 1.2px 1.2px blanchedalmond;
+}
+
+//animation home page
+#gradienthome {
+  animation-name: gradienthome;
+  animation-duration: 10s; 
+}
+
+@keyframes gradienthome {
+  0% {
+    color: black;
+    text-shadow: 2px 2px white;
+  }
+  25% {
+    color: darkcyan;
+    text-shadow: 1px 1px white;
+  }
+  50% {
+    text-shadow: 1.2px 1.2px lightslategrey;
+    color: white;
+  }
+  75% {
+    color: beige;
+    text-shadow: 1px 1px grey;
+  }
+  100% {
+    color: white;
+    text-shadow: 1px 1px black;
+  }
+}
+
+
+
+//
+.rw-wrapper{
+    width: 80%;
+    position: relative;
+    font-family: 'Libre Baskerville', serif;
+}
+.rw-words{
+    display: inline;
+    text-indent: 2px;
+    color: #ED3B29;
+    font-weight: bold;
+    text-shadow: 1px 1px white;
+}
+.rw-words-1 span{
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-animation: rotateWord 39s linear infinite 0s;
+    -ms-animation: rotateWord 39s linear infinite 0s;
+    animation: rotateWord 39s linear infinite 0s;
+}
+.rw-words-1 span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+}
+.rw-words-1 span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    -ms-animation-delay: 6s; 
+    animation-delay: 6s; 
+}
+.rw-words-1 span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+    -ms-animation-delay: 9s; 
+    animation-delay: 9s; 
+}
+.rw-words-1 span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+    -ms-animation-delay: 12s; 
+    animation-delay: 12s; 
+}
+.rw-words-1 span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+    -ms-animation-delay: 15s; 
+    animation-delay: 15s; 
+}
+
+.rw-words-1 span:nth-child(7) { 
+    -webkit-animation-delay: 18s; 
+    -ms-animation-delay: 18s; 
+    animation-delay: 18s; 
+}
+
+.rw-words-1 span:nth-child(8) { 
+    -webkit-animation-delay: 21s; 
+    -ms-animation-delay: 21s; 
+    animation-delay: 21s; 
+}
+
+.rw-words-1 span:nth-child(9) { 
+    -webkit-animation-delay: 24s; 
+    -ms-animation-delay: 24s; 
+    animation-delay: 24s; 
+}
+
+.rw-words-1 span:nth-child(10) { 
+    -webkit-animation-delay: 27s; 
+    -ms-animation-delay: 27s; 
+    animation-delay: 27s; 
+}
+
+.rw-words-1 span:nth-child(11) { 
+    -webkit-animation-delay: 30s; 
+    -ms-animation-delay: 30s; 
+    animation-delay: 30s; 
+}
+
+.rw-words-1 span:nth-child(12) { 
+    -webkit-animation-delay: 33s; 
+    -ms-animation-delay: 33s; 
+    animation-delay: 33s; 
+}
+
+.rw-words-1 span:nth-child(13) { 
+    -webkit-animation-delay: 36s; 
+    -ms-animation-delay: 36s; 
+    animation-delay: 36s; 
+}
+
+.rw-words-1 span:nth-child(14) { 
+    -webkit-animation-delay: 39s; 
+    -ms-animation-delay: 39s; 
+    animation-delay: 39s; 
+}
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+    5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+    20% { opacity: 0; -ms-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@media screen and (max-width: 768px){
+    .rw-sentence { font-size: 18px; }
+}
+@media screen and (max-width: 320px){
+    .rw-sentence { font-size: 9px; }
+}
+
+
+
+
+
 
