@@ -71,11 +71,14 @@ h2 {
 }
 
 .peasant{
-  height: 190px;
-  float: right;
-  margin-right: 440px;
-  margin-top: -100px;
+  width: 10%;
+  order: 2; 
   animation-name: fade1;
+}
+
+.peasant-text { 
+ display: inline-block;
+ order: 1; 
 }
 
 .fade {
@@ -98,17 +101,16 @@ h2 {
 
 th, td, table {
   text-align: center;
-  border: 1px dashed #5E1D00;
+  border: 1px dashed lightslategrey;
   border-spacing: 5px;
 }
 
 table.center{
 	margin-left:auto;
 	margin-right:auto;
-	color: white;
 }
 
-form{
+form {
 	text-align:center;
 	font-weight: bolder;
 }
@@ -227,13 +229,8 @@ ul, ol, p, h2, h3, h4{
 }
 
 .table-date-text {
-  color: darkslateblue;
-  text-shadow: 1.2px 1.2px beige;
-}
-
-.table-header-text {
-  color: #212D8A;
-  text-shadow: 1.2px 1.2px blanchedalmond;
+  color: #2C7A8A;
+  text-shadow: 1px 1px white;
 }
 
 //animation home page
@@ -395,8 +392,67 @@ ul, ol, p, h2, h3, h4{
     .rw-sentence { font-size: 9px; }
 }
 
+//grid beginning page
+
+.beginning-container {
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  grid-gap: 50px 50px; 
+  padding-left: 80px;
+  padding-right: 80px;
+  flex: auto; 
+  
+}
+
+.beginning-1 {
+  background: blue;
+  grid-column-start: 1;
+  grid-column-end: span col3-start;
+  grid-row-start: 1;
+  grid-row-end: row2-end;
+}
+
+.beginning-2 {
+  background: orange;
+}
+
+.beginning-3 {
+  background: yellow;
+}
+
+.beginning-4 {
+  background: green;
+}
+
+.beginning-5 {
+  background: lime; 
+}
+
+.beginning-6 {
+  background: lightblue; 
+}
+
+.beginning-7 {
+  background: darkblue; 
+}
+
+.beginning-8 {
+  background: pink;  
+}
+
+.beginning-9 {
+  background: purple;
+}
 
 
+.table-header-text {
+  color: #blue;
+  text-shadow: 1.2px 1.2px blanchedalmond;
+}
 
+//theclimax styles
 
-
+.climax-background {
+  background-image: url("https://images.unsplash.com/photo-1464823063530-08f10ed1a2dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+}
