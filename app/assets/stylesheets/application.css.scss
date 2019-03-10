@@ -19,6 +19,26 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+body {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em; 
+}
+
+p {
+  font-size: 1.4em;
+}
+
 ul, ol, body, h1, h3 {
   font-family: 'Libre Baskerville', serif;
 }
@@ -56,6 +76,7 @@ h2 {
 
 .navbar {
   border: none;
+  font-size: 1.4em;
 }
 
 .logo:hover {
@@ -139,8 +160,8 @@ form {
 }
 
 
-ul, ol, p, h2, h3, h4{
-  margin-left:50px;
+ul, ol, h2, h3, h4{
+  margin-left: 40px;
 }
 
 // Nav Styles
@@ -191,11 +212,13 @@ ul, ol, p, h2, h3, h4{
 .blue-shadow {
   color: beige;
   text-shadow: 1.2px 1.2px cornflowerblue;
+  font-size: 23px;
 }
 
 .teal-shadow {
   color: beige;
   text-shadow: 1.2px 1.2px teal;
+  font-size: 23px;
 }
 
 .teal-text {
@@ -206,6 +229,7 @@ ul, ol, p, h2, h3, h4{
 .grey-shadow {
   color: beige;
   text-shadow: 1px 1px grey;
+  font-size: 23px;
 }
 
 .black-shadow {
@@ -216,21 +240,25 @@ ul, ol, p, h2, h3, h4{
 .table-time-text {
   text-shadow: 1px 1px ghostwhite;
   color: rebeccapurple;
+  font-size: 15px;
 }
 
 .table-blue-text {
   text-shadow: 1px 1px ghostwhite;
   color: darkmagenta;
+  font-size: 15px;
 }
 
 .table-course-text {
   color: royalblue;
   text-shadow: 1.2px 1.2px white;
+  font-size: 15px;
 }
 
 .table-date-text {
   color: #2C7A8A;
   text-shadow: 1px 1px white;
+  font-size: 15px;
 }
 
 //animation home page
@@ -398,21 +426,23 @@ ul, ol, p, h2, h3, h4{
   display: grid;
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 1fr; 
   grid-gap: 20px; 
-  margin: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
   width: 100%;
+  overflow-wrap: break-word;
   flex: auto; 
 }
 
 .beginning-a {
-  background: lightblue;
   grid-column: 1 / 4;
   row: 1; 
 }
 
 .beginning-1 {
-  background: lightpink;
+  background: lightgoldenrodyellow;
   grid-column: 1 / 3;
   row: 2; 
   justify-items: left; 
@@ -505,9 +535,33 @@ ul, ol, p, h2, h3, h4{
   grid-row: 8 / 10
 }
 
+.grid-header-text {
+   color: darkred;
+   font-size: 3em;
+   margin: 20px;
+}
 
+.grid-header-background {
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.grid-text {
+  color: darkred;
+  margin: 20px;
+  font-size: 2em;
+}
 
+.grid-3-text {
+  padding: 20px;
+  color: darkred;
+}
+
+.grid-small-text {
+  color: darkred;
+  font-size: 1em;
+}
 
 .table-header-text {
   color: #blue;

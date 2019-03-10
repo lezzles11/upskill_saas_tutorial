@@ -32,6 +32,8 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'font-awesome-sass', '4.6.2'
 # Use Bulma sass gem for adding grids
 gem "bulma-rails", "~> 0.7.4"
+# Use Hirb gem for better console data presentation
+gem 'hirb', '0.7.3'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
