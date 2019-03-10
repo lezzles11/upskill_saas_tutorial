@@ -568,6 +568,288 @@ ul, ol, h2, h3, h4{
   text-shadow: 1.2px 1.2px blanchedalmond;
 }
 
+//gridbeginning progress bars 
+
+
+.progress { 
+ position: relative; 
+ display: block;
+ padding: 5px;
+ padding-bottom: 25px;
+ margin: 20px;
+ line-height: 1px; 
+ font-size: 2em;
+ background: rgba(0,0,0,0.1);
+ border-radius: 30px;
+ box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), 0 1px rgba(255,255,255,0.8);
+}  
+
+.progress span {
+  position: relative; 
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px; 
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden; 
+  background-color: cornsilk;
+  background-size: 100%; //whats going on
+  animation: progress 5s infinite linear;
+}
+
+.progress span::after{
+  position: absolute;
+  vertical-align: middle;
+  top: 0;
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  content: "";
+  background-size: 50%; 
+  background-image: linear-gradient(45deg, lightblue 25%,
+                                       rgba(0,0,0,0) 25%,
+                                       rgba(0,0,0,0) 50%,
+                                       lightblue 50%,
+                                       lightblue 75%,
+                                       rgba(0,0,0,0) 75%,
+                                       rgba(0,0,0,0));
+  background-size: 30px 30px;
+  opacity: 0.8; 
+ /* bottom: calc(100% + 5px);
+  z-index: 1; 
+  display: inline-block;
+  content: attr(data-label);
+  padding: 5px;
+  font-size: 0.8em;
+  border-radius: 3px;
+  background-color: rgba(0,0,0,1); */
+  //animation: progress-after 2s infinite linear; 
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes progress-after {
+  0% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 30px 50%;
+  }
+  }
+  
+//css progress 
+
+
+.csspercent { 
+ position: relative; 
+ display: block;
+ padding: 5px;
+ font-size: 16px; 
+ margin: 20px;
+ line-height: 16px; 
+ font-size: 2em;
+ background: rgba(0,0,0,0.1);
+ border-radius: 30px;
+ box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), 0 1px rgba(255,255,255,0.8);
+}  
+
+.csspercent span {
+  position: relative; 
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px; 
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden; 
+  background-color: cornsilk;
+  animation: csspercent 5s infinite linear;
+}
+
+.csspercent span::after{
+  position: absolute;
+  top: 0;
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  content: "";
+  background-size: 100%; 
+  background-image: linear-gradient(45deg, lightpink 25%,
+                                       rgba(0,0,0,0) 25%,
+                                       rgba(0,0,0,0) 50%,
+                                       lightpink 50%,
+                                       lightpink 75%,
+                                       rgba(0,0,0,0) 75%,
+                                       rgba(0,0,0,0));
+  background-size: 30px 30px;
+  opacity: 0.8; 
+  animation: csspercent-after 5s infinite linear; 
+}
+
+@keyframes csspercent {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes csspercent-after {
+  0% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 30px 100%;
+  }
+  }
+  
+.javapercent { 
+ position: relative; 
+ display: block;
+ padding: 5px;
+ font-size: 16px; 
+ margin: 20px;
+ line-height: 16px; 
+ font-size: 2em;
+ background: rgba(0,0,0,0.1);
+ border-radius: 30px;
+ box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), 0 1px rgba(255,255,255,0.8);
+}  
+
+.javapercent span {
+  position: relative; 
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px; 
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden; 
+  background-color: cornsilk;
+  animation: javapercent 5s infinite linear;
+}
+
+.javapercent span::after{
+  position: absolute;
+  top: 0;
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  content: "";
+  background-size: 100%; 
+  background-image: linear-gradient(45deg, lightgreen 25%,
+                                       rgba(0,0,0,0) 25%,
+                                       rgba(0,0,0,0) 50%,
+                                       lightgreen 50%,
+                                       lightgreen 75%,
+                                       rgba(0,0,0,0) 75%,
+                                       rgba(0,0,0,0));
+  background-size: 30px 30px;
+  opacity: 0.8; 
+  animation: javapercent-after 10s infinite linear; 
+}
+
+@keyframes javapercent {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes javapercent-after {
+  0% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 30px 100%;
+  }
+  }
+  
+.pythonpercent { 
+ position: relative; 
+ display: block;
+ padding: 5px;
+ font-size: 16px; 
+ margin: 20px;
+ line-height: 16px; 
+ font-size: 2em;
+ background: rgba(0,0,0,0.1);
+ border-radius: 30px;
+ box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), 0 1px rgba(255,255,255,0.8);
+}  
+
+.pythonpercent span {
+  position: relative; 
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px; 
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden; 
+  background-color: white;
+  animation: pythonpercent 5s infinite linear;
+}
+
+.pythonpercent span::after{
+  position: absolute;
+  top: 0;
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  content: "";
+  background-size: 100%; 
+  background-image: linear-gradient(45deg, lightpurple 25%,
+                                       rgba(0,0,0,0) 25%,
+                                       rgba(0,0,0,0) 50%,
+                                       lightpurple 50%,
+                                       lightpurple 75%,
+                                       rgba(0,0,0,0) 75%,
+                                       rgba(0,0,0,0));
+  background-size: 30px 30px;
+  opacity: 0.8; 
+  animation: pythonpercent-after 10s infinite linear; 
+}
+
+@keyframes pythonpercent {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 2%;
+  }
+}
+
+@keyframes pythonpercent-after {
+  0% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 30px 100%;
+  }
+  }
+  
+//LOADING STUFF
+/*
+.progress span::before {
+  position: absolute; 
+  right: 0; 
+  bottom: 100;
+  display: inline-block; 
+  width: 0; 
+  height: 0; 
+  border: 10px solid transparent; 
+  border-right-width: 0;
+  border-bottom-width: 0; 
+  border-top-color: rgba(0,0,0,1);
+  content: "";
+}
+*/
+
+
 //theclimax styles
 
 .climax-background {
