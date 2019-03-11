@@ -34,10 +34,6 @@ gem 'font-awesome-sass', '4.6.2'
 gem "bulma-rails", "~> 0.7.4"
 # Use Hirb gem for better console data presentation
 gem 'hirb', '0.7.3'
-# boostrap
-gem 'bootstrap'
-# contact us 
-gem 'mail_form'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record

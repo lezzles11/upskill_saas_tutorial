@@ -2,7 +2,6 @@ class ContactsController < ApplicationController
   def new
     @contact = Contact.new
   end
-  
 def create
   @contact = Contact.new(contact_params)
   if @contact.save
@@ -12,7 +11,6 @@ def create
      flash[:danger] = @contact.errors.full_messages.join(", ")
      redirect_to new_contact_path
   end
-end
 end
 
 private
