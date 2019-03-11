@@ -1,5 +1,2 @@
-class Contact < MailForm::Base
-  validates :name, presence: true
-  validates :email, presence: true
-  validates :comments, presence: true
+class Contact < ActiveRecord::Base
 end
