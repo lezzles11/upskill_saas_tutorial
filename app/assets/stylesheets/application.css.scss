@@ -855,3 +855,47 @@ ul, ol, h2, h3, h4{
 .climax-background {
   background-image: url("https://images.unsplash.com/photo-1464823063530-08f10ed1a2dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
 }
+
+.dropdown {
+  display: inline-block;
+  z-index: 10;
+  color: white;
+}
+
+  .dropdown__hover {
+    padding: 15px;
+    border: none; 
+    cursor: pointer;
+  }
+  
+  .dropdown__hover:hover {
+    color: white;
+  }
+  
+  .dropdown__menu {
+    display: none; 
+    top: 100%;
+    padding: 10px;
+    margin-left: 5px;
+    position: absolute;
+    left: 0;
+    background: white; 
+    color: black;
+   // min-width: 200px; //maybe not necessary
+   // box-shadow: 1px 1px white;
+  }
+  
+  .dropdown:hover .dropdown__menu {
+    display: block; 
+  }
+  
+  .dropdown__menu a {
+    display: block; 
+    border: none; 
+    text-decoration: none; 
+    border: dotted 1px white;
+  }
+  
+  .dropdown__menu a:hover {
+    background: lightpink;
+  }
