@@ -1,9 +1,10 @@
-class PhilmedMailer < ActionMailer::Base
+class PhilmedMailer < ActionMailer::Base #WATCH THE CAPITALIZATION 
   default to: 'lesley.yc@gmail.com'
-  def contact_email(upset1, upset2, upset3)
-    @upset1 = upset1
+  def philmed_email(upset1, upset2, upset3)
+    @upset1 = upset1 #needs to correspond with the three above 
     @upset2 = upset2
     @upset3 = upset3
-    mail(from: email, subject: 'Phil Med')
+    
+    mail(subject: 'Philosophical Meditation') 
   end
 end
