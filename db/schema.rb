@@ -24,6 +24,9 @@ ActiveRecord::Schema.define(version: 20190312162826) do
     t.text     "upset1"
     t.text     "upset2"
     t.text     "upset3"
+    t.text     "upset4"
+    t.text     "upset5"
+    t.text     "upset6"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
