@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
     if @contact.save #when you do .save, the whole thing gets saved into database 
        flash[:success] = "Message sent." 
        redirect_to new_contact_path #if save is successful, redirect them back to the new contact path 
-    else #otherwise... 
+    else #other-wise... 
        flash[:danger] = @contact.errors.full_messages.join(", ") 
        redirect_to new_contact_path #otherwise, redirect them back to the blank form. 
     end

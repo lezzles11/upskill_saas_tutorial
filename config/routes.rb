@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get 'gridbeginning', to: 'pages#gridbeginning'
   get 'theclimax', to: 'pages#theclimax'
   resources :contacts
-  resources :philmeds
+  resources :philmed
 end
