@@ -1,6 +1,6 @@
 class PhilmedMailer < ActionMailer::Base
   default to: 'lesley.yc@gmail.com'
-  def philmed_email(upset1, upset2, upset3)
+  def contact_email(upset1, upset2, upset3)
     @upset1 = upset1
     @upset2 = upset2
     @upset3 = upset3

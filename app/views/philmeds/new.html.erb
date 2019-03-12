@@ -2,19 +2,20 @@
   <h3 class="text-center">Philosophical Meditation</h3>
   <div class="row">
     <div class="col-md col-md-offset-1">
+      <%= flash[:notice] %>
       <div class="well">
-        <%= form_for "/philmed" do |f| %>
+        <%= form_for @philmed do |f| %>
           <div class="form-group">
             <%= f.label :upset1, 'Write down everything you are currently anxious about' %>
-            <%= f.text_area :comments, class: 'form-control' %>
+            <%= f.text_area :upset1, class: 'form-control' %>
           </div>
           <div class="form-group">
             <%= f.label :upset2, 'What would happen to us if everything we’re dimly worried about really came to pass? ' %>
-            <%= f.text_area :comments, class: 'form-control' %>
+            <%= f.text_area :upset2, class: 'form-control' %>
           </div>
           <div class="form-group">
             <%= f.label :upset3, 'What are the real dangers?' %>
-            <%= f.text_area :comments, class: 'form-control' %>
+            <%= f.text_area :upset3, class: 'form-control' %>
           </div>
           <%= f.submit 'Submit', class: 'btn btn-default' %>
         <% end %>

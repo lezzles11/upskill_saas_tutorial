@@ -1,4 +1,4 @@
-class CreatePhilmed < ActiveRecord::Migration[5.0]
+class CreatePhilmeds < ActiveRecord::Migration[5.0]
   def change
     create_table :philmeds do |t|
       t.text :upset1
