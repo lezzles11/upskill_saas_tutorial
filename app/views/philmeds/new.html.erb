@@ -7,16 +7,19 @@
         <%= form_for @philmed do |f| %>
            <div class="form-group">
               <%= f.label :idea1, 'What important problems do other people still have?' %>
-              <%= f.text_area :idea1, class: 'form-control' %>
+              <%= f.text_field :idea1, class: 'form-control' %>
            </div>
+           
            <div class="form-group">
               <%= f.label :idea2, 'Where have I noticed problems in my life of relevance to others?' %>
               <%= f.text_area :idea2, class: 'form-control' %>
            </div>
+           
            <div class="form-group">
               <%= f.label :idea3, 'What problems do I really care about solving for others?' %>
               <%= f.text_area :idea3, class: 'form-control' %>
            </div>
+           
            <div class="form-group">
             <%= f.label :idea4, 'New insights from today? What did that teach you about what you want to change?' %>
             <%= f.text_area :idea4, class: 'form-control' %>
@@ -26,26 +29,32 @@
 	          <%= f.label :anxious1, 'Write down what you are anxious about – find at least 8 things. (Work – Relationships – Children/Parents – Health – Money – Things I have to do)' %>
 	          <%= f.text_area :anxious1, class: 'form-control' %>
           </div>
+          
           <div class="form-group">
           	<%= f.label :anxious2, 'What would happen to us if everything we’re dimly worried about really came to pass?' %>
           	<%= f.text_area :anxious2, class: 'form-control' %>
           </div>
+          
           <div class="form-group">
           	<%= f.label :anxious3, 'What are the real dangers?' %>
           	<%= f.text_area :anxious3, class: 'form-control' %>
           </div>
+          
           <div class="form-group">
           	<%= f.label :anxious4, 'How might we still be OK, even if it all fell apart? One by one, we should confront the worst – and see that it is, for the most part, very survivable.' %>
           	<%= f.text_area :anxious4, class: 'form-control' %>
           </div>
+          
           <div class="form-group">
           	<%= f.label :anxious5, 'There’s practical unpacking: talk yourself through the practical challenge. What steps do you need to take? What needs to happen when?' %>
           	<%= f.text_area :anxious5, class: 'form-control' %>
           </div>
+          
           <div class="form-group">
           	<%= f.label :anxious6, 'What do others need to do? It’s very useful to have a calm and sympathetic part of yourself (or a friend) listening in on the detailed description of what needs to be done to address an issue. It’s no longer merely an anxiety. It’s a set of steps. They might not all be easy – but at least you are clearer about what they are. ' %>
           	<%= f.text_area :anxious6, class: 'form-control' %>
           </div>
+          
           <div class="form-group">
           	<%= f.label :anxious7, 'There’s also emotional unpacking: Talk yourself through an emotional challenge or set of doubts. Describe the feeling in more detail. What do you feel it points to?' %>
           	<%= f.text_area :anxious7, class: 'form-control' %>
@@ -116,7 +125,6 @@
           	<%= f.label :excited6, 'If other parts of my life were more like this, what might they be like? Pick the set of answers to one thing that now especially intrigues you.' %>
           	<%= f.text_area :excited6, class: 'form-control' %>
           </div>          
-          
           <%= f.submit 'Submit', class: 'btn btn-default' %>
         <% end %>
       </div>

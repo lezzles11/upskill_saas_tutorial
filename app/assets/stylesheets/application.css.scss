@@ -899,3 +899,62 @@ ul, ol, h2, h3, h4{
   .dropdown__menu a:hover {
     background: lightpink;
   }
+
+
+.reflectionlist {
+  display: inline-block;
+}
+
+.reflectionheader {
+  text-shadow: 2px 2px crimson;
+  color: white;
+}
+
+.reflectiondescription {
+  margin-left: 40px;
+  color: beige;
+  text-shadow: 1.2px 1.2px teal;
+  font-size: 23px;
+}
+
+.whiteredheading {
+    font-size: 70px;
+    /* padding: 80px 50px; */
+    text-align: center;
+    /* text-transform: uppercase; */
+    text-rendering: optimizeLegibility;
+    text-shadow: 2px 3.5px crimson;
+    /* color: #2c2c2c; */
+    /* background-color: #d5d5d5; */
+    letter-spacing: .05em;
+    text-shadow: 3px 2.5px 0px crimson, 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.whiteredshadow {
+      font-size: 29px;
+    /* padding: 80px 50px; */
+    text-align: center;
+    /* text-transform: uppercase; */
+    text-rendering: optimizeLegibility;
+    text-shadow: 2px 3.5px crimson;
+    color: honeydew;
+    font-weight: bolder;
+    /* background-color: #d5d5d5; */
+    letter-spacing: .05em;
+    text-shadow: 1px 2.5px 2px crimson, 4.5px 2px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.nasatext {
+  background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+  /* color: red; */
+  -webkit-text-fill-color: transparent;
+  text-rendering: optimizeLegibility;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  font-size: 100px;
+  font-family: arial, helvetica;
+  width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
